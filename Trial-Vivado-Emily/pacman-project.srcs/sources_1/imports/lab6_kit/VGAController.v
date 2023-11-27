@@ -38,15 +38,15 @@ module VGAController(
 	wire[8:0] y;
 	
 	wire showTitle, showPacman;
-	reg[9:0] pacman_x;
-	reg[8:0] pacman_y;
-	reg[3:0] startGame;
+	reg[9:0] pacman_x = 310;
+	reg[8:0] pacman_y = 230;
+	reg[3:0] startGame = 2;
 	
-	initial begin
-	   assign pacman_x = 310;
-	   assign pacman_y = 230;
-	   assign startGame = 2;
-	end
+	// initial begin
+	//    assign pacman_x = 310;
+	//    assign pacman_y = 230;
+	//    assign startGame = 2;
+	// end
 	
 	always @(posedge screenEnd) begin
 		if(BTNR) begin
@@ -169,7 +169,7 @@ module VGAController(
 		
 	wire[PACMAN_PIXEL_ADDRESS_WIDTH-1:0] pacmanImgAddress;  	        // Image address for pacman image data
 	wire[PALETTE_ADDRESS_WIDTH-1:0] pacmanColorAddr; 	 // Color address for the color palette
-	assign pacmanImgAddress = (x-pacman_x) + 22*(y-pacman_y);				 // Address calculated coordinate
+	assign pacmanImgAddress = (x-pacman_x) + 22*(y - pacman_y);				 // Address calculated coordinate
 	
 	// RAM for Pacman Sprite
 	RAM #(		
@@ -201,10 +201,23 @@ module VGAController(
 	
 
 	// Assign to output color from register if active
-	wire[BITS_PER_COLOR-1:0] colorOut, bottom, middle; 			   // Output color 
-	assign bottom = showPacman ? pacmanColorData : levelColorData;
+	wire[BITS_PER_COLOR-1:0] bottom, middle; 			   
+	reg[BITS_PER_COLOR-1:0] colorOut;
+	// Output color 
+	//assign bottom = showPacman ? pacmanColorData : levelColorData;
 //	assign middle = showTitle ? startColorData : levelColorData;
-	assign colorOut = active ? bottom : 12'd0;     // When not active, output black
+	//assign colorOut = active ? bottom : 12'd0;     // When not active, output black
+	always @(posedge clk) begin
+		if(pacman_x < x && x < pacman_x + 22 && pacman_y < y && y < pacman_y + 22 && active) begin
+			colorOut <= pacmanColorData;
+		end
+		else if(active) begin
+			colorOut <= levelColorData;
+		end
+		else begin
+			colorOut <= 12'd0;
+		end
+	end
 
 	// Quickly assign the output colors to their channels using concatenation
 	assign {VGA_R, VGA_G, VGA_B} = colorOut;
