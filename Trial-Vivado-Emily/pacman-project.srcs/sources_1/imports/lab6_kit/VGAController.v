@@ -17,7 +17,7 @@ module VGAController(
 	
 	// Lab Memory Files Location - must be full path
 	// CHANGE THIS AFTER PULLING DOWN!!!!! -- TODO: set up configurations files and .gitignore
-	localparam FILES_PATH = "Memory_Files/";
+	localparam FILES_PATH = "C:/Users/Emily Shao/Desktop/pacman-fpga/Memory/";
 
 	// Clock divider 100 MHz -> 25 MHz
 	wire clk25; // 25MHz clock
@@ -41,12 +41,7 @@ module VGAController(
 	reg[9:0] pacman_x = 310;
 	reg[8:0] pacman_y = 230;
 	reg[3:0] startGame = 2;
-	
-	// initial begin
-	//    assign pacman_x = 310;
-	//    assign pacman_y = 230;
-	//    assign startGame = 2;
-	// end
+
 	
 	always @(posedge screenEnd) begin
 		if(BTNR) begin
@@ -90,7 +85,7 @@ module VGAController(
 		PIXEL_COUNT = VIDEO_WIDTH*VIDEO_HEIGHT, 	             // Number of pixels on the screen
 		PIXEL_ADDRESS_WIDTH = $clog2(PIXEL_COUNT) + 1,           // Use built in log2 command
 		BITS_PER_COLOR = 12, 	  								 // Nexys A7 uses 12 bits/color
-		PALETTE_COLOR_COUNT = 256, 								 // Number of Colors available
+		PALETTE_COLOR_COUNT = 6, 								 // Number of Colors available
 		PALETTE_ADDRESS_WIDTH = $clog2(PALETTE_COLOR_COUNT) + 1; // Use built in log2 Command
 
 
@@ -158,9 +153,6 @@ module VGAController(
 //		.dataOut(startColorData),				       // Color at current pixel
 //		.wEn(1'b0));
 
-
-
-
 	
 	// variables for Pacman Sprite to map location to pixel color
 	localparam 
@@ -199,15 +191,15 @@ module VGAController(
 	
 	
 	
+	// logic for determining if pixel is black and can be a coin
+	
 
-	// Assign to output color from register if active
-	wire[BITS_PER_COLOR-1:0] bottom, middle; 			   
+	// Assign to output color from register if active			   
 	reg[BITS_PER_COLOR-1:0] colorOut;
-	// Output color 
-	//assign bottom = showPacman ? pacmanColorData : levelColorData;
-//	assign middle = showTitle ? startColorData : levelColorData;
-	//assign colorOut = active ? bottom : 12'd0;     // When not active, output black
 	always @(posedge clk) begin
+//	    if (showTitle) begin
+//	        colorOut <= startColorData;
+//	    end
 		if(pacman_x < x && x < pacman_x + 22 && pacman_y < y && y < pacman_y + 22 && active) begin
 			colorOut <= pacmanColorData;
 		end

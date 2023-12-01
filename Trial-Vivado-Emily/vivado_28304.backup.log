@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 28 14:26:56 2023
+# Process ID: 28304
+# Current directory: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18712 C:\Users\Emily Shao\Desktop\pacman-fpga\Trial-Vivado-Emily\pacman-project.xpr
+# Log file: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/vivado.log
+# Journal file: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Emily Shao/Desktop/lab6_kit/pacman-project' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.gen/sources_1', nor could it be found using path 'C:/Users/Emily Shao/Desktop/lab6_kit/pacman-project/pacman-project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 999.840 ; gain = 0.000
+eexit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 28 22:58:52 2023...
