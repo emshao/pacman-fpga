@@ -20,6 +20,15 @@ instantiate:
     #and then sw $r11, 0($r12)
     #then add 1 to $r12
     #and then repeat
+addi $r25, $zero, 12
+loop:
+    #do the stuff
+    addi $r12, $r12, 1
+    addi $r25, $r25, -1
+    beq $r25, $zero, end_loop
+    j loop
+    
+end_loop:
 
 
 
