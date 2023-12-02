@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Nov 30 16:47:26 2023
+| Date             : Sat Dec  2 12:57:35 2023
 | Host             : Emily-2021LY running 64-bit major release  (build 9200)
 | Command          : report_power -file VGAController_power_routed.rpt -pb VGAController_power_summary_routed.pb -rpx VGAController_power_routed.rpx
 | Design           : VGAController
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.736        |
+| Total On-Chip Power (W)  | 0.114        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.626        |
-| Device Static (W)        | 0.110        |
+| Dynamic (W)              | 0.016        |
+| Device Static (W)        | 0.099        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 68.0         |
-| Junction Temperature (C) | 42.0         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |     1.296 |      362 |       --- |             --- |
-|   LUT as Logic           |     1.159 |      191 |     63400 |            0.30 |
-|   CARRY4                 |     0.106 |       24 |     15850 |            0.15 |
-|   Register               |     0.025 |       81 |    126800 |            0.06 |
-|   BUFG                   |     0.006 |        1 |        32 |            3.13 |
+| Clocks                   |     0.002 |        3 |       --- |             --- |
+| Slice Logic              |     0.001 |      361 |       --- |             --- |
+|   LUT as Logic           |     0.001 |      173 |     63400 |            0.27 |
+|   CARRY4                 |    <0.001 |       24 |     15850 |            0.15 |
+|   Register               |    <0.001 |       81 |    126800 |            0.06 |
 |   Others                 |     0.000 |       17 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |       20 |     19000 |            0.11 |
-| Signals                  |     1.394 |      287 |       --- |             --- |
-| Block RAM                |     0.684 |     30.5 |       135 |           22.59 |
-| DSPs                     |     0.155 |        1 |       240 |            0.42 |
-| I/O                      |     0.096 |       20 |       210 |            9.52 |
-| Static Power             |     0.110 |          |           |                 |
-| Total                    |     3.736 |          |           |                 |
+| Signals                  |     0.001 |      284 |       --- |             --- |
+| Block RAM                |     0.011 |     30.5 |       135 |           22.59 |
+| DSPs                     |    <0.001 |        1 |       240 |            0.42 |
+| I/O                      |    <0.001 |       20 |       210 |            9.52 |
+| Static Power             |     0.099 |          |           |                 |
+| Total                    |     0.114 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,16 +74,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     3.520 |       3.490 |      0.030 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.026 |       0.006 |      0.020 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.030 |       0.015 |      0.016 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     0.040 |       0.036 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.062 |       0.060 |      0.002 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -97,7 +97,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -127,9 +127,11 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-------+--------+-----------------+
-| Clock | Domain | Constraint (ns) |
-+-------+--------+-----------------+
++-------------+--------+-----------------+
+| Clock       | Domain | Constraint (ns) |
++-------------+--------+-----------------+
+| sys_clk_pin | clk    |            10.0 |
++-------------+--------+-----------------+
 
 
 3. Detailed Reports
@@ -141,10 +143,10 @@ Table of Contents
 +-------------------+-----------+
 | Name              | Power (W) |
 +-------------------+-----------+
-| VGAController     |     3.626 |
-|   Display         |     1.269 |
-|   LevelData       |     0.716 |
-|   PacmanImageData |     0.428 |
+| VGAController     |     0.016 |
+|   Display         |     0.001 |
+|   LevelData       |     0.011 |
+|   PacmanImageData |     0.001 |
 +-------------------+-----------+
 
 
