@@ -2,12 +2,13 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Dec  2 23:11:42 2023
-# Process ID: 16476
+# Start of session at: Sat Dec  2 18:15:16 2023
+# Process ID: 22336
 # Current directory: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10432 C:\Users\Emily Shao\Desktop\pacman-fpga\Trial-Vivado-Emily\pacman-project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28640 C:\Users\Emily Shao\Desktop\pacman-fpga\Trial-Vivado-Emily\pacman-project.xpr
 # Log file: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/vivado.log
 # Journal file: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.xpr}
+import_files -norecurse {{C:/Users/Emily Shao/Desktop/pacman-fpga/processor/ROM.v}}

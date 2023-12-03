@@ -46,13 +46,7 @@ module VGAController(
 	reg[9:0] pacman_x = 310;
 	reg[8:0] pacman_y = 230;
 	reg[3:0] startGame = 2;
-	
-	// initial begin
-	//    assign pacman_x = 310;
-	//    assign pacman_y = 230;
-	//    assign startGame = 2;
-	// end
-	
+
 	always @(posedge screenEnd) begin
 		if(BTNR) begin
 			pacman_x <= pacman_x + 1;
@@ -73,8 +67,6 @@ module VGAController(
 	
 	assign showPacman = ((pacman_x)<x) & (x<(pacman_x+22)) & ((pacman_y)<y) & (y<(pacman_y+22));
 	assign showTitle = (startGame>0);
-	
-	
 	
 	
 	VGATimingGenerator #(
@@ -166,8 +158,8 @@ module VGAController(
 
 
 
-	
-	// variables for Pacman Sprite to map location to pixel color
+
+// ---------- variables for Pacman Sprite to map location to pixel color --------------------------------------
 	localparam 
 		PACMAN_PIXEL_COUNT = 22*22, 	                                // Number of pixels on the screen
 		PACMAN_PIXEL_ADDRESS_WIDTH = $clog2(PACMAN_PIXEL_COUNT) + 1;    // Use built in log2 command
@@ -201,7 +193,7 @@ module VGAController(
 		.addr(pacmanColorAddr),					       // Address from the PacmanImageData RAM
 		.dataOut(pacmanColorData),				       // Color at current pixel
 		.wEn(1'b0)); 						       // We're always reading
-	
+// ------------------------------------------------------------------------------------------------------------	
 	
 	
 
