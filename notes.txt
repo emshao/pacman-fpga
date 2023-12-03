@@ -1,0 +1,21 @@
+Changes to be implemented to VGAController:
+1. reset button in constrains file --> C12
+2. delete anything with PS2
+3. change RAM to ROM
+    a. delete write_enable
+    b. change readmemb to readmemh
+
+
+Changes to implement:
+1. put all levels on the same RAM picture
+    a. mux to different levels
+2. add coins to map
+
+
+
+
+Test folders / file structure:
+
+1. testing in Trial-Test vivado project on desktop
+    a. reading memory files from lab6_kit on desktop
+    b. vivado project is slowly changing to implement all these ideas

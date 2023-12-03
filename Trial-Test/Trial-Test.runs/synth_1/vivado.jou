@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec  3 03:06:47 2023
+# Process ID: 27196
+# Current directory: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/synth_1
+# Command line: vivado.exe -log VGAController.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGAController.tcl
+# Log file: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/synth_1/VGAController.vds
+# Journal file: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source VGAController.tcl -notrace
