@@ -17,3 +17,238 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+export_ip_user_files -of_objects  [get_files {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/sources_1/imports/lab6_kit/Ps2Interface.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/sources_1/imports/lab6_kit/Ps2Interface.vhd}}
+file delete -force {C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/sources_1/imports/lab6_kit/Ps2Interface.vhd}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/sources_1/imports/lab6_kit/RAM.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/sources_1/imports/lab6_kit/RAM.v}}
+file delete -force {C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/sources_1/imports/lab6_kit/RAM.v}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Dec  2 23:15:04 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Dec  2 23:16:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Dec  2 23:18:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.runs/synth_1/runme.log
+WARNING: [filemgmt 20-1445] Cannot import file 'C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/sources_1/imports/lab6_kit/ROM.v' on top of itself. Importing a file from the imported source directory can cause this problem.
+add_files -norecurse {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/sources_1/imports/lab6_kit/ROM.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/sources_1/imports/processor/ROM.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/sources_1/imports/processor/ROM.v}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Dec  2 23:20:47 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sat Dec  2 23:20:56 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.runs/synth_1/runme.log
+create_project Trial-Test {C:/Users/Emily Shao/Desktop/Trial-Test} -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+add_files -fileset constrs_1 -norecurse {{C:/Users/Emily Shao/Desktop/lab6_kit/master.xdc}}
+import_files -fileset constrs_1 {{C:/Users/Emily Shao/Desktop/lab6_kit/master.xdc}}
+import_files -norecurse {{C:/Users/Emily Shao/Desktop/lab6_kit/RAM.v} {C:/Users/Emily Shao/Desktop/lab6_kit/VGAController.v} {C:/Users/Emily Shao/Desktop/lab6_kit/VGATimingGenerator.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Sat Dec  2 23:25:51 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Dec  2 23:27:01 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec  2 23:30:49 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/synth_1/runme.log
+[Sat Dec  2 23:30:49 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1206.934 ; gain = 0.000
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2445A
+set_property PROGRAM.FILE {C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/VGAController.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/VGAController.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+add_files -fileset constrs_1 -norecurse {{C:/Users/Emily Shao/Desktop/lab6_kit/constraints.xdc}}
+import_files -fileset constrs_1 {{C:/Users/Emily Shao/Desktop/lab6_kit/constraints.xdc}}
+close_hw_manager
+reorder_files -fileset constrs_1 -before {C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.srcs/constrs_1/imports/lab6_kit/master.xdc} {{C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.srcs/constrs_1/imports/lab6_kit/constraints.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Dec  2 23:54:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Dec  2 23:56:14 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec  2 23:57:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2482.023 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2445A
+set_property PROGRAM.FILE {C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/VGAController.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/VGAController.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+current_project pacman-project
+current_project Trial-Test
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Dec  3 00:01:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/synth_1/runme.log
+current_project pacman-project
+add_files -fileset constrs_1 -norecurse {{C:/Users/Emily Shao/Desktop/pacman-fpga/constraints.xdc}}
+import_files -fileset constrs_1 {{C:/Users/Emily Shao/Desktop/pacman-fpga/constraints.xdc}}
+current_project Trial-Test
+launch_runs impl_1 -jobs 4
+[Sun Dec  3 00:02:37 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/runme.log
+current_project pacman-project
+current_project Trial-Test
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Dec  3 00:04:03 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/runme.log
+current_project pacman-project
+current_project Trial-Test
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2482.023 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2445A
+set_property PROGRAM.FILE {C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/VGAController.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/VGAController.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Dec  3 00:05:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/synth_1/runme.log
+[Sun Dec  3 00:05:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/runme.log
+current_project pacman-project
+close_project
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/VGAController.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
