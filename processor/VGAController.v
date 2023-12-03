@@ -95,7 +95,7 @@ module VGAController(
 		PIXEL_COUNT = VIDEO_WIDTH*VIDEO_HEIGHT, 	             // Number of pixels on the screen
 		PIXEL_ADDRESS_WIDTH = $clog2(PIXEL_COUNT) + 1,           // Use built in log2 command
 		BITS_PER_COLOR = 12, 	  								 // Nexys A7 uses 12 bits/color
-		PALETTE_COLOR_COUNT = 256, 								 // Number of Colors available
+		PALETTE_COLOR_COUNT = 8, 								 // Number of Colors available
 		PALETTE_ADDRESS_WIDTH = $clog2(PALETTE_COLOR_COUNT) + 1; // Use built in log2 Command
 
 
@@ -165,7 +165,8 @@ module VGAController(
 
 
 
-
+	logic [479:0][639:0] moveArray;
+	
 	
 	// variables for Pacman Sprite to map location to pixel color
 	localparam 

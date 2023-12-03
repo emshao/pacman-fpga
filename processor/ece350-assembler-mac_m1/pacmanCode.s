@@ -27,13 +27,14 @@ loop:
     addi $r25, $r25, -1
     beq $r25, $zero, end_loop
     j loop
-    
+
 end_loop:
 
 
 
 #AND THEN AT EACH STEP CHECK IF VALID
 #AND THEN DEFINE INSTR TO MAKE CANNOT MOVE 1 IF NOT VALID AND 0 IF VALID
+#UPDATE: ^THESE DONE
 
 
 main_loop:
