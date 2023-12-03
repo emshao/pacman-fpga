@@ -1,8 +1,8 @@
 set_property SRC_FILE_INFO {cfile:{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Vivado-Emily/pacman-project.srcs/constrs_1/imports/lab6_kit/master.xdc} rfile:../../../pacman-project.srcs/constrs_1/imports/lab6_kit/master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
+set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
 set_property src_info {type:XDC file:1 line:74 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN C12   IOSTANDARD LVCMOS33 } [get_ports { CPU_RESETN }]; #IO_L3P_T0_DQS_AD1P_15 Sch=cpu_resetn
+set_property -dict { PACKAGE_PIN C12   IOSTANDARD LVCMOS33 } [get_ports { reset }]; #IO_L3P_T0_DQS_AD1P_15 Sch=cpu_resetn
 set_property src_info {type:XDC file:1 line:75 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { BTNC }]; #IO_L9P_T1_DQS_14 Sch=btnc
 set_property src_info {type:XDC file:1 line:76 export:INPUT save:INPUT read:READ} [current_design]
@@ -38,10 +38,6 @@ set_property -dict { PACKAGE_PIN D7    IOSTANDARD LVCMOS33 } [get_ports { VGA_B[
 set_property src_info {type:XDC file:1 line:145 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D8    IOSTANDARD LVCMOS33 } [get_ports { VGA_B[3] }]; #IO_L4P_T0_35 Sch=vga_b[3]
 set_property src_info {type:XDC file:1 line:146 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN B11   IOSTANDARD LVCMOS33 } [get_ports { VGA_HS }]; #IO_L4P_T0_15 Sch=vga_hs
+set_property -dict { PACKAGE_PIN B11   IOSTANDARD LVCMOS33 } [get_ports { hSync }]; #IO_L4P_T0_15 Sch=vga_hs
 set_property src_info {type:XDC file:1 line:147 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN B12   IOSTANDARD LVCMOS33 } [get_ports { VGA_VS }]; #IO_L3N_T0_DQS_AD1N_15 Sch=vga_vs
-set_property src_info {type:XDC file:1 line:189 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN F4    IOSTANDARD LVCMOS33 } [get_ports { PS2_CLK }]; #IO_L13P_T2_MRCC_35 Sch=ps2_clk
-set_property src_info {type:XDC file:1 line:190 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN B2    IOSTANDARD LVCMOS33 } [get_ports { PS2_DATA }]; #IO_L10N_T1_AD15N_35 Sch=ps2_data
+set_property -dict { PACKAGE_PIN B12   IOSTANDARD LVCMOS33 } [get_ports { vSync }]; #IO_L3N_T0_DQS_AD1N_15 Sch=vga_vs

@@ -2,7 +2,8 @@ import csv
 
 data = []
 
-with open("C:\\Users\\Emily Shao\\Desktop\\lab6_kit\\CSV_Files\\boolean-pacman.csv", "r", newline='') as file:
+# change file path
+with open("CSV\\boolean-pacman.csv", "r", newline='') as file:
     for line in file:
         data.append(line.split(','))
 
@@ -29,7 +30,9 @@ for x in range(len(data)-21):
 
 print("done changing")
 
-with open("C:\\Users\\Emily Shao\\Desktop\\lab6_kit\\CSV_Files\\boolean-pacman-mod.csv", "w", newline='') as file:
+
+# change file path
+with open("CSV\\boolean-pacman-mod.csv", "w", newline='') as file:
     writer = csv.writer(file)
     counter = 0
     for x in data:
