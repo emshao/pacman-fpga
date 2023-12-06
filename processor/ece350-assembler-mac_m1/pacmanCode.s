@@ -45,7 +45,8 @@ main_loop:
     add $r8, $r5, $r8 # x + 640*y -> r8
     add $r9, $r8, $r13 # r8 + r13 -> r9 (address to search for in mem)
     lw $r10, 0($r9) # r10 = mem[r9]
-    beq $r10, $zero, cant_move # if not allowed to be there, execute the corresponding logic
+    #beq $r10, $zero, cant_move # if not allowed to be there, execute the corresponding logic
+    
 cont_main:
     addcoin, $r1, $r1, 1
     addi, $r3, $r3, 1

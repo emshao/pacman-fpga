@@ -1,0 +1,81 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 10;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+S_0x138611d80 .scope module, "instr_decode_tb" "instr_decode_tb" 2 3;
+ .timescale -9 -10;
+v0x60000015b720_0 .net "ALUop", 4 0, L_0x600000250a00;  1 drivers
+v0x60000015b7b0_0 .var/i "i", 31 0;
+v0x60000015b840_0 .net "imm", 16 0, L_0x600000250b40;  1 drivers
+v0x60000015b8d0_0 .net "instruction", 31 0, v0x60000015b7b0_0;  1 drivers
+v0x60000015b960_0 .net "opcode", 4 0, L_0x6000002506e0;  1 drivers
+v0x60000015b9f0_0 .net "rD", 4 0, L_0x600000250780;  1 drivers
+v0x60000015ba80_0 .net "rs", 4 0, L_0x600000250820;  1 drivers
+v0x60000015bb10_0 .net "rt", 4 0, L_0x6000002508c0;  1 drivers
+v0x60000015bba0_0 .net "shamt", 4 0, L_0x600000250960;  1 drivers
+v0x60000015bc30_0 .net "targ", 26 0, L_0x600000250be0;  1 drivers
+v0x60000015bcc0_0 .net "zeroesLong", 21 0, L_0x600000250c80;  1 drivers
+v0x60000015bd50_0 .net "zeroesShort", 1 0, L_0x600000250aa0;  1 drivers
+S_0x138611ef0 .scope module, "decodeee" "instr_decode" 2 11, 3 1 0, S_0x138611d80;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 32 "instruction";
+    .port_info 1 /OUTPUT 5 "opcode";
+    .port_info 2 /OUTPUT 5 "rD";
+    .port_info 3 /OUTPUT 5 "rs";
+    .port_info 4 /OUTPUT 5 "rt";
+    .port_info 5 /OUTPUT 5 "shamt";
+    .port_info 6 /OUTPUT 5 "ALUop";
+    .port_info 7 /OUTPUT 2 "zeroesShort";
+    .port_info 8 /OUTPUT 17 "imm";
+    .port_info 9 /OUTPUT 27 "targ";
+    .port_info 10 /OUTPUT 22 "zeroesLong";
+v0x60000015b0f0_0 .net "ALUop", 4 0, L_0x600000250a00;  alias, 1 drivers
+v0x60000015b180_0 .net "imm", 16 0, L_0x600000250b40;  alias, 1 drivers
+v0x60000015b210_0 .net "instruction", 31 0, v0x60000015b7b0_0;  alias, 1 drivers
+v0x60000015b2a0_0 .net "opcode", 4 0, L_0x6000002506e0;  alias, 1 drivers
+v0x60000015b330_0 .net "rD", 4 0, L_0x600000250780;  alias, 1 drivers
+v0x60000015b3c0_0 .net "rs", 4 0, L_0x600000250820;  alias, 1 drivers
+v0x60000015b450_0 .net "rt", 4 0, L_0x6000002508c0;  alias, 1 drivers
+v0x60000015b4e0_0 .net "shamt", 4 0, L_0x600000250960;  alias, 1 drivers
+v0x60000015b570_0 .net "targ", 26 0, L_0x600000250be0;  alias, 1 drivers
+v0x60000015b600_0 .net "zeroesLong", 21 0, L_0x600000250c80;  alias, 1 drivers
+v0x60000015b690_0 .net "zeroesShort", 1 0, L_0x600000250aa0;  alias, 1 drivers
+L_0x6000002506e0 .part v0x60000015b7b0_0, 27, 5;
+L_0x600000250780 .part v0x60000015b7b0_0, 22, 5;
+L_0x600000250820 .part v0x60000015b7b0_0, 17, 5;
+L_0x6000002508c0 .part v0x60000015b7b0_0, 12, 5;
+L_0x600000250960 .part v0x60000015b7b0_0, 7, 5;
+L_0x600000250a00 .part v0x60000015b7b0_0, 2, 5;
+L_0x600000250aa0 .part v0x60000015b7b0_0, 0, 2;
+L_0x600000250b40 .part v0x60000015b7b0_0, 0, 17;
+L_0x600000250be0 .part v0x60000015b7b0_0, 0, 27;
+L_0x600000250c80 .part v0x60000015b7b0_0, 0, 22;
+    .scope S_0x138611d80;
+T_0 ;
+    %pushi/vec4 1, 0, 32;
+    %store/vec4 v0x60000015b7b0_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0x60000015b7b0_0;
+    %cmpi/s 131072000, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %delay 200, 0;
+    %vpi_call 2 20 "$display", "i:%b,opcode:%b,rd:%b,rs:%b,rt:%b", v0x60000015b8d0_0, v0x60000015b960_0, v0x60000015b9f0_0, v0x60000015ba80_0, v0x60000015bb10_0 {0 0 0};
+    %load/vec4 v0x60000015b7b0_0;
+    %addi 248000, 0, 32;
+    %store/vec4 v0x60000015b7b0_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %vpi_call 2 27 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "instr_decode_tb.v";
+    "instr_decode.v";
