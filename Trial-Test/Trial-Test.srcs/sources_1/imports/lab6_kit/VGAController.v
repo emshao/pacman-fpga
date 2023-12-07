@@ -40,7 +40,7 @@ module VGAController(
     wire showTitle, showPacman, showWin;
 	reg[9:0] pacman_x = 310;
 	reg[8:0] pacman_y = 230;
-	reg[3:0] startGame = 1;
+	reg startGame = 1'b1;
 	
 	always @(posedge screenEnd) begin
 		if(BTNR) begin
@@ -56,7 +56,7 @@ module VGAController(
 			pacman_y <= pacman_y - 1;
 		end
 		if(BTNC) begin
-		    startGame <= startGame - 1;
+		    startGame <= 0;
 		end
 	end  
 	
@@ -202,7 +202,7 @@ module VGAController(
 		.dataOut(pacmanColorData));				       	// Color at current pixel
 // ------------------------------------------------------------------------------------------------------------	
 	
-	
+	wire onCoin = (y>10 && y<470) && (x>10 && x<630) && (y<170 || y>250) && (x<250 || x>400) && ((y%28 == 27) || (y%28 == 0) || (y%28 == 1)) && ((x%50 == 24)||(x%50 == 25)||(x%50 == 26));
 
 	// Assign to output color from register if active
 	reg[BITS_PER_COLOR-1:0] colorOut;
@@ -212,6 +212,9 @@ module VGAController(
 	    end
 		else if (showPacman && active) begin
 			colorOut <= pacmanColorData;
+		end
+		else if (onCoin && active) begin
+			colorOut <= 112'hff0;
 		end
 		else if (active) begin
 			colorOut <= colorData;

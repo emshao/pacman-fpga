@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.xpr">
+<Project Version="7" Minor="54" Path="C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="b97d21f90d4c42499d160c31f604d0c5"/>
@@ -75,7 +75,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/imports/lab6_kit/ROM.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/ROM.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/ROM.v"/>
           <Attr Name="ImportTime" Val="1701447647"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -84,7 +84,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab6_kit/VGATimingGenerator.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/VGATimingGenerator.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/VGATimingGenerator.v"/>
           <Attr Name="ImportTime" Val="1701016132"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -93,7 +93,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/lab6_kit/VGAController.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/VGAController.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/VGAController.v"/>
           <Attr Name="ImportTime" Val="1701016132"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -103,7 +103,7 @@
       <File Path="$PSRCDIR/sources_1/imports/lab6_kit/RAM.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/RAM.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/RAM.v"/>
           <Attr Name="ImportTime" Val="1701016132"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -120,7 +120,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/lab6_kit/constraints.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/constraints.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/constraints.xdc"/>
           <Attr Name="ImportTime" Val="1701016132"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -128,7 +128,7 @@
       </File>
       <File Path="$PSRCDIR/constrs_1/imports/lab6_kit/master.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/master.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/master.xdc"/>
           <Attr Name="ImportTime" Val="1701024679"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -139,6 +139,7 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="VGAController"/>
@@ -180,11 +181,9 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="15">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Trial-Test/Trial-Test.srcs/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -192,11 +191,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Trial-Test/Trial-Test.srcs/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.srcs/constrs_1/imports/lab6_kit/constraints.xdc} rfile:../../../Trial-Test.srcs/constrs_1/imports/lab6_kit/constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.srcs/constrs_1/imports/lab6_kit/constraints.xdc} rfile:../../../Trial-Test.srcs/constrs_1/imports/lab6_kit/constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
