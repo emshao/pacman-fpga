@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/impl_1/VGAController.tcl"
+  variable script "C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.runs/impl_1/VGAController.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -131,16 +130,16 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.runs/synth_1/VGAController.dcp}}
+  add_files -quiet {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.runs/synth_1/VGAController.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.srcs/constrs_1/imports/lab6_kit/constraints.xdc}}
-  read_xdc {{C:/Users/Emily Shao/Desktop/Trial-Test/Trial-Test.srcs/constrs_1/imports/lab6_kit/master.xdc}}
+  read_xdc {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.srcs/constrs_1/imports/lab6_kit/constraints.xdc}}
+  read_xdc {{C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.srcs/constrs_1/imports/lab6_kit/master.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

@@ -11,12 +11,17 @@ if len(sys.argv) != 2:
 
 imageName = sys.argv[1]
 
-with open(csv_path + imageName + "-colors.csv", "r") as csvFile:
-       with open(mem_path + imageName + "-colors.mem", "w") as memFile:
-            for row in csv.reader(csvFile):
-                memFile.write(" ".join(row) + "\n")
+# with open(csv_path + imageName + "-colors.csv", "r") as csvFile:
+#        with open(mem_path + imageName + "-colors.mem", "w") as memFile:
+#             for row in csv.reader(csvFile):
+#                 memFile.write(" ".join(row) + "\n")
 
-with open(csv_path + imageName + "-image.csv", "r") as csvFile:
-    with open(mem_path + imageName + "-image.mem", "w") as memFile:
+# with open(csv_path + imageName + "-image.csv", "r") as csvFile:
+#     with open(mem_path + imageName + "-image.mem", "w") as memFile:
+#         for row in csv.reader(csvFile):
+#             memFile.write(" ".join(row) + "\n")
+
+with open(imageName, "r") as csvFile:
+    with open(mem_path + "boolean-map.mem", "w") as memFile:
         for row in csv.reader(csvFile):
             memFile.write(" ".join(row) + "\n")

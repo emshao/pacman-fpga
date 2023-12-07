@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Dec  3 03:09:12 2023
+| Date         : Tue Dec  5 13:13:48 2023
 | Host         : Emily-2021LY running 64-bit major release  (build 9200)
 | Command      : report_drc -file VGAController_drc_opted.rpt -pb VGAController_drc_opted.pb -rpx VGAController_drc_opted.rpx
 | Design       : VGAController
@@ -72,12 +72,12 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT Display/pacman_x[9]_i_3 is driving clock pin of 23 cells. This could lead to large hold time violations. Involved cells are:
+A LUT Display/pacman_x[9]_i_3 is driving clock pin of 20 cells. This could lead to large hold time violations. Involved cells are:
 pacman_x_reg[0], pacman_x_reg[1], pacman_x_reg[2], pacman_x_reg[3],
 pacman_x_reg[4], pacman_x_reg[5], pacman_x_reg[6], pacman_x_reg[7],
 pacman_x_reg[8], pacman_x_reg[9], pacman_y_reg[0], pacman_y_reg[1],
 pacman_y_reg[2], pacman_y_reg[3], pacman_y_reg[4]
- (the first 15 of 23 listed)
+ (the first 15 of 20 listed)
 Related violations: <none>
 
 

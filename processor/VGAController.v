@@ -164,6 +164,18 @@ module VGAController(
 		.addr(winColorAddr),					       // Address from the ImageData RAM
 		.dataOut(winColorData));				       // Color at current pixel
 	
+
+	wire allowedBool; 	 // boolean allowed to go here or not
+
+	VGAROM #(		
+		.DEPTH(PIXEL_COUNT), 				     // Set RAM depth to contain every pixel
+		.DATA_WIDTH(1),      					// Set data width according to boolean
+		.ADDRESS_WIDTH(PIXEL_ADDRESS_WIDTH),     // Set address with according to the pixel count
+		.MEMFILE({FILES_PATH, "boolean-map.mem"})) // Memory initialization
+	WinImageData(
+		.clk(clk), 						 // Falling edge of the 100 MHz clk
+		.addr(imgAddress),					 // Image data address
+		.dataOut(allowedBool));				 // Allowed to go into this space or not
 	
 	
 	// ---------- variables for Pacman Sprite to map location to pixel color --------------------------------------
@@ -202,6 +214,8 @@ module VGAController(
 		.dataOut(pacmanColorData));				       	// Color at current pixel
 // ------------------------------------------------------------------------------------------------------------	
 	
+
+	wire onCoin = (y%16 == 0) && (x%50 == 0);
 	
 
 	// Assign to output color from register if active
@@ -212,6 +226,9 @@ module VGAController(
 	    end
 		else if (showPacman && active) begin
 			colorOut <= pacmanColorData;
+		end
+		else if (onCoin && active) begin
+			colorOut <= 3'hff0;
 		end
 		else if (active) begin
 			colorOut <= colorData;

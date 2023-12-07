@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1701590805">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1701799858">
   <File Type="PA-TCL" Name="VGAController.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="VGAController_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="VGAController_reports.tcl"/>
@@ -13,7 +13,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/lab6_kit/ROM.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/ROM.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/ROM.v"/>
         <Attr Name="ImportTime" Val="1701447647"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -22,7 +22,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/lab6_kit/VGATimingGenerator.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/VGATimingGenerator.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/VGATimingGenerator.v"/>
         <Attr Name="ImportTime" Val="1701016132"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -31,7 +31,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/lab6_kit/VGAController.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/VGAController.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/VGAController.v"/>
         <Attr Name="ImportTime" Val="1701016132"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -41,7 +41,7 @@
     <File Path="$PSRCDIR/sources_1/imports/lab6_kit/RAM.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/RAM.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/RAM.v"/>
         <Attr Name="ImportTime" Val="1701016132"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -58,7 +58,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/lab6_kit/constraints.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/constraints.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/constraints.xdc"/>
         <Attr Name="ImportTime" Val="1701016132"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -66,7 +66,7 @@
     </File>
     <File Path="$PSRCDIR/constrs_1/imports/lab6_kit/master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../lab6_kit/master.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../lab6_kit/master.xdc"/>
         <Attr Name="ImportTime" Val="1701024679"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -83,9 +83,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
