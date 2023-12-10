@@ -19,3 +19,7 @@ Test folders / file structure:
 1. testing in Trial-Test vivado project on desktop
     a. reading memory files from lab6_kit on desktop
     b. vivado project is slowly changing to implement all these ideas
+
+
+
+https://duke.zoom.us/j/92590729640
