@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec  7 15:16:35 2023
+# Process ID: 26984
+# Current directory: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3592 C:\Users\Emily Shao\Desktop\pacman-fpga\with-Wrapper\with-Wrapper.xpr
+# Log file: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/vivado.log
+# Journal file: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/RAM.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/ROM.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/VGAController.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/VGATimingGenerator.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/alu.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/barrel_shift.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/cla_32.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/cla_32_for_mult.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/cla_8.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/comp_2.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/comp_32.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/comp_8.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/decoder_32.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/dffe_ref.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/div.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/dlatch.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/dlatch_1.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/instr_decode.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/m32counter.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/m64counter.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mult.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/multdiv.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_2_1.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_2_2.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_2_30.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_2_31.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_2_32.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_2_5.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_32_1.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_32_32.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_32_5.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_4_1.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_4_30.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_4_32.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_4_5.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_8_1.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_8_30.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_8_32.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/mux_8_5.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/processor.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/regSingle.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/regfile.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/register.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/register64.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/shift_1.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/shift_16.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/shift_2.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/shift_4.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/shift_8.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/sub_conv.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/tff.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/tristate.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/Wrapper.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/Wrapper_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/cla_32_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/cla_8_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/comp_2_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/comp_8_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/div_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/full_adder.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/half_adder.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/instr_decode_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/onebit_adder.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/partial_sum_gen.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/regfile_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/tristate_30.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/tristate_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor/Ps2Interface.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+import_files -force -norecurse {{C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/m32counter.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/barrel_shift.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/half_adder.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/cla_8.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/multdiv.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_2_5.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/register64.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/RAM.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/ROM.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mult.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_2_32.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_2_30.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_8_30.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_8_5.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_32_5.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/alu.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_8_32.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/Ps2Interface.vhd} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_32_1.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/comp_8_tb.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_2_1.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/partial_sum_gen.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_8_1.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/onebit_adder.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/comp_2_tb.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/register.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/comp_8.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/dffe_ref.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/comp_2.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/cla_32_tb.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/dlatch_1.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_32_32.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/dlatch.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/cla_32_for_mult.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_4_32.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/processor.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/div_tb.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/m64counter.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/regfile.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_2_31.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/decoder_32.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/regSingle.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/div.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/instr_decode.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_4_5.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/cla_32.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/shift_1.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_4_1.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_2_2.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/full_adder.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/instr_decode_tb.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/cla_8_tb.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/mux_4_30.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/regfile_tb.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/comp_32.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+import_files -force -norecurse {{C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/tff.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/VGAROM.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/Wrapper.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/shift_2.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/VGATimingGenerator.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/VGAController.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/Wrapper_tb.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/sub_conv.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/shift_8.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/tristate_tb.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/shift_4.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/tristate.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/tristate_30.v} {C:/Users/Emily Shao/Desktop/pacman-fpga/12-05 processor/processor copy/shift_16.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Dec  7 15:20:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Dec  7 15:21:40 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Dec  7 15:22:37 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.runs/synth_1/runme.log
+add_files -fileset constrs_1 -norecurse {{C:/Users/Emily Shao/Desktop/lab6_kit/constraints.xdc}}
+import_files -fileset constrs_1 {{C:/Users/Emily Shao/Desktop/lab6_kit/constraints.xdc}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.runs/synth_1
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 16:27:53 2023...

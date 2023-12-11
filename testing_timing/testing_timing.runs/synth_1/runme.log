@@ -1,0 +1,433 @@
+
+*** Running vivado
+    with args -log Wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Wrapper.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Wrapper.tcl -notrace
+Command: synth_design -top Wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 896
+WARNING: [Synth 8-6901] identifier 'topBits' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/div.v:32]
+WARNING: [Synth 8-992] notCTRL is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mult.v:48]
+WARNING: [Synth 8-992] mul_res is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/multdiv.v:29]
+WARNING: [Synth 8-992] div_res is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/multdiv.v:29]
+WARNING: [Synth 8-992] mul_exception is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/multdiv.v:30]
+WARNING: [Synth 8-992] div_exception is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/multdiv.v:30]
+WARNING: [Synth 8-992] mul_RDY is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/multdiv.v:30]
+WARNING: [Synth 8-992] div_RDY is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/multdiv.v:30]
+WARNING: [Synth 8-992] fdInstrOut is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:166]
+WARNING: [Synth 8-992] dxInstrOut is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:173]
+WARNING: [Synth 8-992] PCpN is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:180]
+WARNING: [Synth 8-992] shouldBranch is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:183]
+WARNING: [Synth 8-992] multdivRDY is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:224]
+WARNING: [Synth 8-992] ctrl_MULT is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:255]
+WARNING: [Synth 8-992] ctrl_DIV is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:255]
+WARNING: [Synth 8-992] shouldStall is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:303]
+WARNING: [Synth 8-992] shouldDefStall is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:307]
+WARNING: [Synth 8-992] LongTargXM is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:343]
+WARNING: [Synth 8-992] temp_ADX is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:355]
+WARNING: [Synth 8-992] temp_BDX is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:355]
+WARNING: [Synth 8-992] finalA is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:365]
+WARNING: [Synth 8-992] finalB is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:365]
+WARNING: [Synth 8-992] stallConds is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:382]
+WARNING: [Synth 8-992] xmOpcode is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:437]
+WARNING: [Synth 8-992] xmRD is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:437]
+WARNING: [Synth 8-992] xmALUOp is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:437]
+WARNING: [Synth 8-6901] identifier 'dxPCOut' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:89]
+WARNING: [Synth 8-6901] identifier 'bexComm' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:120]
+WARNING: [Synth 8-6901] identifier 'dxBOut' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:120]
+WARNING: [Synth 8-6901] identifier 'jOrJal' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:155]
+WARNING: [Synth 8-6901] identifier 'shouldJr' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:156]
+WARNING: [Synth 8-6901] identifier 'shouldBranchOrJump' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:163]
+WARNING: [Synth 8-6901] identifier 'shouldBranchOrJump' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:171]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeRegDX' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:262]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeRegDX' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:263]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeRegXM' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:264]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeRegXM' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:265]
+WARNING: [Synth 8-6901] identifier 'xmExceptOut' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:298]
+WARNING: [Synth 8-6901] identifier 'xmTarg' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:345]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeEnableXM' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:360]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeEnableXM' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:362]
+WARNING: [Synth 8-6901] identifier 'mulOrDivMW' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:417]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1023.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Wrapper' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/timing/Wrapper_timing.v:27]
+	Parameter INSTR_FILE bound to: timing - type: string 
+INFO: [Synth 8-6157] synthesizing module 'processor' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:20]
+INFO: [Synth 8-6157] synthesizing module 'instr_decode' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/instr_decode.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'instr_decode' (1#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/instr_decode.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cla_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/cla_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sub_conv' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/sub_conv.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sub_conv' (2#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/sub_conv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cla_8' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/cla_8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cla_8' (3#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/cla_8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cla_32' (4#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/cla_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'barrel_shift' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/barrel_shift.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_16' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/shift_16.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_32' (5#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shift_16' (6#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/shift_16.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_8' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/shift_8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shift_8' (7#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/shift_8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_4' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/shift_4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shift_4' (8#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/shift_4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_2' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/shift_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shift_2' (9#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/shift_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/shift_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shift_1' (10#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/shift_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'barrel_shift' (11#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/barrel_shift.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_1' (12#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'comp_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/comp_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'comp_8' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/comp_8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'comp_2' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/comp_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_8_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_8_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_4_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_1' (13#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_4_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8_1' (14#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_8_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'comp_2' (15#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/comp_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'comp_8' (16#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/comp_8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'comp_32' (17#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/comp_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_8_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_8_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_4_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_32' (18#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_4_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8_32' (19#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_8_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (20#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_32_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_32_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_32_32' (21#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_32_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regSingle' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/regSingle.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dffe_ref' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/dffe_ref.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dffe_ref' (22#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/dffe_ref.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regSingle' (23#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/regSingle.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multdiv' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/multdiv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dlatch_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/dlatch_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dlatch_1' (24#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/dlatch_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dlatch' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/dlatch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dlatch' (25#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/dlatch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register64' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/register64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register64' (26#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/register64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cla_32_for_mult' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/cla_32_for_mult.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cla_32_for_mult' (27#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/cla_32_for_mult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'm32counter' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/m32counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/tff.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (28#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/tff.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'm32counter' (29#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/m32counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_8_30' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_8_30.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_30' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_4_30.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_30' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_30.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_30' (30#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_30.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_30' (31#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_4_30.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8_30' (32#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_8_30.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_2' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_2' (33#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mult' (34#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'div' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_31' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_31.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_31' (35#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_31.v:1]
+INFO: [Synth 8-6157] synthesizing module 'm64counter' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/m64counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'm64counter' (36#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/m64counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'div' (37#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/div.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'multdiv' (38#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/multdiv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_32_5' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_32_5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_8_5' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_8_5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_5' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_4_5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_5' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_5' (39#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_2_5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_5' (40#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_4_5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8_5' (41#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_8_5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_32_5' (42#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_32_5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_32_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_32_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_32_1' (43#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/mux_32_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'processor' (44#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/processor.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/ROM.v:2]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter DEPTH bound to: 4096 - type: integer 
+	Parameter MEMFILE bound to: 80'b01110100011010010110110101101001011011100110011100101110011011010110010101101101 
+INFO: [Synth 8-3876] $readmem data file 'timing.mem' is read successfully [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/ROM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (45#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/ROM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/decoder_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_32' (46#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/decoder_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/register.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register' (47#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tristate' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/tristate.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'tristate' (48#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/tristate.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (49#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/RAM.v:2]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (50#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/orig_processor/RAM.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Wrapper' (51#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/sources_1/imports/timing/Wrapper_timing.v:27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1023.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1023.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1023.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.406 . Memory (MB): peak = 1023.707 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/constrs_1/imports/timing/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk_100mhz'. [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/constrs_1/imports/timing/Nexys-A7-100T-Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/constrs_1/imports/timing/Nexys-A7-100T-Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_25mhz'. [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/constrs_1/imports/timing/Nexys-A7-100T-Master.xdc:10]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk_25mhz]'. [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/constrs_1/imports/timing/Nexys-A7-100T-Master.xdc:10]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/constrs_1/imports/timing/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.srcs/constrs_1/imports/timing/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1077.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1077.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1077.324 ; gain = 53.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1077.324 ; gain = 53.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1077.324 ; gain = 53.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1077.324 ; gain = 53.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'CPU/multtt/multiplyy/compAGT1' (comp_32) to 'CPU/multtt/multiplyy/compAGTn1'
+INFO: [Synth 8-223] decloning instance 'CPU/multtt/multiplyy/compBGT1' (comp_32) to 'CPU/multtt/multiplyy/compBGTn1'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 728   
+	   3 Input      1 Bit         XORs := 704   
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 1871  
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 236   
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 8     
+	   2 Input    5 Bit        Muxes := 98    
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3037  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:44 . Memory (MB): peak = 1077.324 ; gain = 53.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+---------------------+---------------+----------------+
+|Module Name | RTL Object          | Depth x Width | Implemented As | 
++------------+---------------------+---------------+----------------+
+|Wrapper     | InstMem/dataOut_reg | 4096x16       | Block RAM      | 
++------------+---------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Wrapper     | ProcMem/MemoryArray_reg | 4 K x 32(NO_CHANGE)    | W | R |                        |   |   | Port A           | 0      | 4      | 
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1077.324 ; gain = 53.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:53 . Memory (MB): peak = 1084.664 ; gain = 60.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object              | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Wrapper     | ProcMem/MemoryArray_reg | 4 K x 32(NO_CHANGE)    | W | R |                        |   |   | Port A           | 0      | 4      | 
++------------+-------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance ProcMem/MemoryArray_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ProcMem/MemoryArray_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ProcMem/MemoryArray_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ProcMem/MemoryArray_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance InstMem/dataOut_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance InstMem/dataOut_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1102.441 ; gain = 78.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:57 . Memory (MB): peak = 1115.301 ; gain = 91.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:57 . Memory (MB): peak = 1115.301 ; gain = 91.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:57 . Memory (MB): peak = 1115.301 ; gain = 91.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:57 . Memory (MB): peak = 1115.301 ; gain = 91.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1115.305 ; gain = 91.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1115.305 ; gain = 91.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT1     |     9|
+|3     |LUT2     |   318|
+|4     |LUT3     |    76|
+|5     |LUT4     |   282|
+|6     |LUT5     |   291|
+|7     |LUT6     |  1053|
+|8     |MUXF7    |    26|
+|9     |RAMB36E1 |     6|
+|12    |FDCE     |  1395|
+|13    |FDRE     |    64|
+|14    |IBUF     |    18|
+|15    |OBUF     |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1115.305 ; gain = 91.598
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:53 . Memory (MB): peak = 1115.305 ; gain = 37.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1115.305 ; gain = 91.598
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1127.336 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1127.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+126 Infos, 44 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:01:04 . Memory (MB): peak = 1127.336 ; gain = 127.680
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.runs/synth_1/Wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Wrapper_utilization_synth.rpt -pb Wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 01:36:29 2023...

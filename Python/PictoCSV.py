@@ -20,8 +20,8 @@ imageName = sys.argv[1]
 saveName = sys.argv[2]
 
 # change to local paths
-image_path = "Pictures\\"
-csv_path = "CSV\\"
+image_path = "C:\\Users\\Emily Shao\\Desktop\\pacman-fpga\\Pictures\\"
+csv_path = "C:\\Users\\Emily Shao\\Desktop\\pacman-fpga\\CSV\\"
 
 file = Image.open(image_path + imageName)
 

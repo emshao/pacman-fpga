@@ -1,0 +1,5 @@
+addcoin,I,01001
+beq,I,01010
+setPacX,I,01011
+setPacY,I,01100
+canNotMove,I,01101

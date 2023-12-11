@@ -1,0 +1,406 @@
+
+*** Running vivado
+    with args -log Wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Wrapper.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Wrapper.tcl -notrace
+Command: synth_design -top Wrapper -part xc7a12ticsg325-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26044
+WARNING: [Synth 8-6901] identifier 'topBits' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/div.v:32]
+WARNING: [Synth 8-992] notCTRL is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mult.v:48]
+WARNING: [Synth 8-992] mul_res is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/multdiv.v:29]
+WARNING: [Synth 8-992] div_res is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/multdiv.v:29]
+WARNING: [Synth 8-992] mul_exception is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/multdiv.v:30]
+WARNING: [Synth 8-992] div_exception is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/multdiv.v:30]
+WARNING: [Synth 8-992] mul_RDY is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/multdiv.v:30]
+WARNING: [Synth 8-992] div_RDY is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/multdiv.v:30]
+WARNING: [Synth 8-992] fdInstrOut is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:226]
+WARNING: [Synth 8-992] dxInstrOut is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:233]
+WARNING: [Synth 8-992] PCpN is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:240]
+WARNING: [Synth 8-992] shouldBranch is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:243]
+WARNING: [Synth 8-992] multdivRDY is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:286]
+WARNING: [Synth 8-992] ctrl_MULT is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:317]
+WARNING: [Synth 8-992] ctrl_DIV is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:317]
+WARNING: [Synth 8-992] shouldStall is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:365]
+WARNING: [Synth 8-992] shouldDefStall is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:369]
+WARNING: [Synth 8-992] LongTargXM is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:401]
+WARNING: [Synth 8-992] temp_ADX is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:413]
+WARNING: [Synth 8-992] temp_BDX is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:413]
+WARNING: [Synth 8-992] finalA is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:423]
+WARNING: [Synth 8-992] finalB is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:423]
+WARNING: [Synth 8-992] stallConds is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:440]
+WARNING: [Synth 8-992] xmOpcode is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:495]
+WARNING: [Synth 8-992] xmRD is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:495]
+WARNING: [Synth 8-992] xmALUOp is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:495]
+WARNING: [Synth 8-6901] identifier 'opcode' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:64]
+WARNING: [Synth 8-6901] identifier 'dxOpcode' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:64]
+WARNING: [Synth 8-6901] identifier 'mwOpcode' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:64]
+WARNING: [Synth 8-6901] identifier 'xmOpcode' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:64]
+WARNING: [Synth 8-6901] identifier 'dxPCOut' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:110]
+WARNING: [Synth 8-6901] identifier 'bexComm' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:180]
+WARNING: [Synth 8-6901] identifier 'dxBOut' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:180]
+WARNING: [Synth 8-6901] identifier 'jOrJal' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:215]
+WARNING: [Synth 8-6901] identifier 'shouldJr' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:216]
+WARNING: [Synth 8-6901] identifier 'shouldBranchOrJump' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:223]
+WARNING: [Synth 8-6901] identifier 'shouldBranchOrJump' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:231]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeRegDX' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:324]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeRegDX' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:325]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeRegXM' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:326]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeRegXM' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:327]
+WARNING: [Synth 8-6901] identifier 'xmExceptOut' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:360]
+WARNING: [Synth 8-6901] identifier 'xmTarg' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:403]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeEnableXM' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:418]
+WARNING: [Synth 8-6901] identifier 'ctrl_writeEnableXM' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:420]
+WARNING: [Synth 8-6901] identifier 'mulOrDivMW' is used before its declaration [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:475]
+WARNING: [Synth 8-992] pacman_x is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/Wrapper.v:91]
+WARNING: [Synth 8-992] pacman_y is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/Wrapper.v:92]
+WARNING: [Synth 8-992] isTouchingCoin is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/Wrapper.v:93]
+WARNING: [Synth 8-992] isDoneCollecting is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/Wrapper.v:93]
+WARNING: [Synth 8-992] canNotMove is already implicitly declared earlier [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/Wrapper.v:94]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1095.996 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Wrapper' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/Wrapper.v:27]
+	Parameter INSTR_FILE bound to: Test Files/addi_basic - type: string 
+INFO: [Synth 8-6157] synthesizing module 'processor' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:20]
+INFO: [Synth 8-6157] synthesizing module 'instr_decode' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/instr_decode.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'instr_decode' (1#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/instr_decode.v:1]
+WARNING: [Synth 8-324] index 9 out of range [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:158]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cla_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/cla_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sub_conv' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/sub_conv.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sub_conv' (2#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/sub_conv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cla_8' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/cla_8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cla_8' (3#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/cla_8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cla_32' (4#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/cla_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'barrel_shift' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/barrel_shift.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_16' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/shift_16.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_32' (5#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shift_16' (6#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/shift_16.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_8' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/shift_8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shift_8' (7#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/shift_8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_4' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/shift_4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shift_4' (8#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/shift_4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_2' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/shift_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shift_2' (9#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/shift_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'shift_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/shift_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shift_1' (10#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/shift_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'barrel_shift' (11#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/barrel_shift.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_1' (12#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'comp_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/comp_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'comp_8' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/comp_8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'comp_2' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/comp_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_8_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_8_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_4_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_1' (13#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_4_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8_1' (14#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_8_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'comp_2' (15#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/comp_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'comp_8' (16#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/comp_8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'comp_32' (17#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/comp_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_8_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_8_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_4_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_32' (18#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_4_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8_32' (19#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_8_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (20#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_32_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_32_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_32_32' (21#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_32_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regSingle' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/regSingle.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dffe_ref' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/dffe_ref.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dffe_ref' (22#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/dffe_ref.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regSingle' (23#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/regSingle.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multdiv' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/multdiv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dlatch_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/dlatch_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dlatch_1' (24#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/dlatch_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dlatch' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/dlatch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dlatch' (25#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/dlatch.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register64' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/register64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register64' (26#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/register64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cla_32_for_mult' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/cla_32_for_mult.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cla_32_for_mult' (27#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/cla_32_for_mult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'm32counter' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/m32counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tff' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/tff.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'tff' (28#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/tff.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'm32counter' (29#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/m32counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_8_30' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_8_30.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_30' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_4_30.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_30' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_30.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_30' (30#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_30.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_30' (31#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_4_30.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8_30' (32#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_8_30.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_2' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_2' (33#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mult' (34#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mult.v:1]
+INFO: [Synth 8-6157] synthesizing module 'div' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_31' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_31.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_31' (35#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_31.v:1]
+INFO: [Synth 8-6157] synthesizing module 'm64counter' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/m64counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'm64counter' (36#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/m64counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'div' (37#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/div.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'multdiv' (38#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/multdiv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_32_5' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_32_5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_8_5' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_8_5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_5' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_4_5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_5' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_5' (39#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_2_5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_5' (40#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_4_5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8_5' (41#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_8_5.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_32_5' (42#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_32_5.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_32_1' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_32_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_32_1' (43#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/mux_32_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'processor' (44#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/processor.v:20]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/ROM.v:2]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter DEPTH bound to: 4096 - type: integer 
+	Parameter MEMFILE bound to: 200'b01010100011001010111001101110100001000000100011001101001011011000110010101110011001011110110000101100100011001000110100101011111011000100110000101110011011010010110001100101110011011010110010101101101 
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'Test Files/addi_basic.mem'; please make sure the file is added to project and has read permission, ignoring [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/ROM.v:11]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (45#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/ROM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder_32' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/decoder_32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_32' (46#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/decoder_32.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/register.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'register' (47#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tristate' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/tristate.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'tristate' (48#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/tristate.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (49#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/RAM.v:2]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (50#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/RAM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VGAController' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAController.v:2]
+	Parameter FILES_PATH bound to: C:/Users/Emily Shao/Desktop/lab6_kit/Memory_Files/ - type: string 
+	Parameter VIDEO_WIDTH bound to: 640 - type: integer 
+	Parameter VIDEO_HEIGHT bound to: 480 - type: integer 
+	Parameter BITS_PER_COLOR bound to: 12 - type: integer 
+	Parameter PIXEL_COUNT bound to: 307200 - type: integer 
+	Parameter PIXEL_ADDRESS_WIDTH bound to: 20 - type: integer 
+	Parameter PALETTE_COLOR_COUNT bound to: 6 - type: integer 
+	Parameter PALETTE_ADDRESS_WIDTH bound to: 3 - type: integer 
+	Parameter S_PALETTE_COLOR_COUNT bound to: 4 - type: integer 
+	Parameter S_PALETTE_ADDRESS_WIDTH bound to: 2 - type: integer 
+	Parameter W_PALETTE_COLOR_COUNT bound to: 8 - type: integer 
+	Parameter W_PALETTE_ADDRESS_WIDTH bound to: 3 - type: integer 
+	Parameter PACMAN_PIXEL_COUNT bound to: 484 - type: integer 
+	Parameter PACMAN_PIXEL_ADR_WIDTH bound to: 10 - type: integer 
+	Parameter PACMAN_COLOR_COUNT bound to: 2 - type: integer 
+	Parameter PACMAN_COLOR_ADR_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'VGATimingGenerator' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGATimingGenerator.v:2]
+	Parameter HEIGHT bound to: 480 - type: integer 
+	Parameter WIDTH bound to: 640 - type: integer 
+	Parameter H_FRONT_PORCH bound to: 16 - type: integer 
+	Parameter H_SYNC_WIDTH bound to: 96 - type: integer 
+	Parameter H_BACK_PORCH bound to: 48 - type: integer 
+	Parameter H_SYNC_START bound to: 656 - type: integer 
+	Parameter H_SYNC_END bound to: 752 - type: integer 
+	Parameter H_LINE bound to: 800 - type: integer 
+	Parameter V_FRONT_PORCH bound to: 11 - type: integer 
+	Parameter V_SYNC_WIDTH bound to: 2 - type: integer 
+	Parameter V_BACK_PORCH bound to: 31 - type: integer 
+	Parameter V_SYNC_START bound to: 491 - type: integer 
+	Parameter V_SYNC_END bound to: 493 - type: integer 
+	Parameter V_LINE bound to: 524 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'VGATimingGenerator' (51#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGATimingGenerator.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VGAROM' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+	Parameter DATA_WIDTH bound to: 3 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 20 - type: integer 
+	Parameter DEPTH bound to: 307200 - type: integer 
+	Parameter MEMFILE bound to: 520'b0100001100111010001011110101010101110011011001010111001001110011001011110100010101101101011010010110110001111001001000000101001101101000011000010110111100101111010001000110010101110011011010110111010001101111011100000010111101101100011000010110001000110110010111110110101101101001011101000010111101001101011001010110110101101111011100100111100101011111010001100110100101101100011001010111001100101111011011000110010101110110011001010110110000101101011010010110110101100001011001110110010100101110011011010110010101101101 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Emily Shao/Desktop/lab6_kit/Memory_Files/level-image.mem' is read successfully [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'VGAROM' (52#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VGAROM__parameterized0' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 6 - type: integer 
+	Parameter MEMFILE bound to: 528'b010000110011101000101111010101010111001101100101011100100111001100101111010001010110110101101001011011000111100100100000010100110110100001100001011011110010111101000100011001010111001101101011011101000110111101110000001011110110110001100001011000100011011001011111011010110110100101110100001011110100110101100101011011010110111101110010011110010101111101000110011010010110110001100101011100110010111101101100011001010111011001100101011011000010110101100011011011110110110001101111011100100111001100101110011011010110010101101101 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Emily Shao/Desktop/lab6_kit/Memory_Files/level-colors.mem' is read successfully [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'VGAROM__parameterized0' (52#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VGAROM__parameterized1' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 20 - type: integer 
+	Parameter DEPTH bound to: 307200 - type: integer 
+	Parameter MEMFILE bound to: 520'b0100001100111010001011110101010101110011011001010111001001110011001011110100010101101101011010010110110001111001001000000101001101101000011000010110111100101111010001000110010101110011011010110111010001101111011100000010111101101100011000010110001000110110010111110110101101101001011101000010111101001101011001010110110101101111011100100111100101011111010001100110100101101100011001010111001100101111011100110111010001100001011100100111010000101101011010010110110101100001011001110110010100101110011011010110010101101101 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Emily Shao/Desktop/lab6_kit/Memory_Files/start-image.mem' is read successfully [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'VGAROM__parameterized1' (52#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VGAROM__parameterized2' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+	Parameter MEMFILE bound to: 528'b010000110011101000101111010101010111001101100101011100100111001100101111010001010110110101101001011011000111100100100000010100110110100001100001011011110010111101000100011001010111001101101011011101000110111101110000001011110110110001100001011000100011011001011111011010110110100101110100001011110100110101100101011011010110111101110010011110010101111101000110011010010110110001100101011100110010111101110011011101000110000101110010011101000010110101100011011011110110110001101111011100100111001100101110011011010110010101101101 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Emily Shao/Desktop/lab6_kit/Memory_Files/start-colors.mem' is read successfully [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'VGAROM__parameterized2' (52#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VGAROM__parameterized3' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+	Parameter DATA_WIDTH bound to: 3 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 20 - type: integer 
+	Parameter DEPTH bound to: 307200 - type: integer 
+	Parameter MEMFILE bound to: 504'b010000110011101000101111010101010111001101100101011100100111001100101111010001010110110101101001011011000111100100100000010100110110100001100001011011110010111101000100011001010111001101101011011101000110111101110000001011110110110001100001011000100011011001011111011010110110100101110100001011110100110101100101011011010110111101110010011110010101111101000110011010010110110001100101011100110010111101110111011010010110111000101101011010010110110101100001011001110110010100101110011011010110010101101101 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Emily Shao/Desktop/lab6_kit/Memory_Files/win-image.mem' is read successfully [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'VGAROM__parameterized3' (52#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VGAROM__parameterized4' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter MEMFILE bound to: 512'b01000011001110100010111101010101011100110110010101110010011100110010111101000101011011010110100101101100011110010010000001010011011010000110000101101111001011110100010001100101011100110110101101110100011011110111000000101111011011000110000101100010001101100101111101101011011010010111010000101111010011010110010101101101011011110111001001111001010111110100011001101001011011000110010101110011001011110111011101101001011011100010110101100011011011110110110001101111011100100111001100101110011011010110010101101101 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Emily Shao/Desktop/lab6_kit/Memory_Files/win-colors.mem' is read successfully [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'VGAROM__parameterized4' (52#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VGAROM__parameterized5' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 10 - type: integer 
+	Parameter DEPTH bound to: 484 - type: integer 
+	Parameter MEMFILE bound to: 528'b010000110011101000101111010101010111001101100101011100100111001100101111010001010110110101101001011011000111100100100000010100110110100001100001011011110010111101000100011001010111001101101011011101000110111101110000001011110110110001100001011000100011011001011111011010110110100101110100001011110100110101100101011011010110111101110010011110010101111101000110011010010110110001100101011100110010111101110000011000010110001101101101011000010110111000101101011010010110110101100001011001110110010100101110011011010110010101101101 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Emily Shao/Desktop/lab6_kit/Memory_Files/pacman-image.mem' is read successfully [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'VGAROM__parameterized5' (52#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VGAROM__parameterized6' [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter MEMFILE bound to: 536'b01000011001110100010111101010101011100110110010101110010011100110010111101000101011011010110100101101100011110010010000001010011011010000110000101101111001011110100010001100101011100110110101101110100011011110111000000101111011011000110000101100010001101100101111101101011011010010111010000101111010011010110010101101101011011110111001001111001010111110100011001101001011011000110010101110011001011110111000001100001011000110110110101100001011011100010110101100011011011110110110001101111011100100111001100101110011011010110010101101101 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Emily Shao/Desktop/lab6_kit/Memory_Files/pacman-colors.mem' is read successfully [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'VGAROM__parameterized6' (52#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAROM.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'VGAController' (53#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/VGAController.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Wrapper' (54#1) [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/sources_1/imports/processor copy/Wrapper.v:27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1604.031 ; gain = 508.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1604.031 ; gain = 508.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1604.031 ; gain = 508.035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.566 . Memory (MB): peak = 1604.031 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'hSync'. [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vSync'. [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.srcs/constrs_1/imports/pacman-fpga/master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1733.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1733.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.480 ; gain = 637.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.480 ; gain = 637.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 1733.480 ; gain = 637.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:01:55 . Memory (MB): peak = 2645.062 ; gain = 1549.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'CPU/multtt/multiplyy/compAGT1' (comp_32) to 'CPU/multtt/multiplyy/compAGTn1'
+INFO: [Synth 8-223] decloning instance 'CPU/multtt/multiplyy/compBGT1' (comp_32) to 'CPU/multtt/multiplyy/compBGTn1'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   12 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 728   
+	   3 Input      1 Bit         XORs := 704   
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 5     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1872  
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 3     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 235   
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 8     
+	   7 Input   12 Bit        Muxes := 1     
+	   5 Input   12 Bit        Muxes := 1     
+	   9 Input   12 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 98    
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3057  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP vgaa/imgAddress, operation Mode is: C+(A:0x280)*B.
+DSP Report: operator vgaa/imgAddress is absorbed into DSP vgaa/imgAddress.
+DSP Report: operator vgaa/imgAddress0 is absorbed into DSP vgaa/imgAddress.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:02:17 . Memory (MB): peak = 2645.062 ; gain = 1549.066
+---------------------------------------------------------------------------------

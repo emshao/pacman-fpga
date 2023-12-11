@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec  7 15:11:53 2023
+# Process ID: 28656
+# Current directory: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25236 C:\Users\Emily Shao\Desktop\pacman-fpga\with-Wrapper\with-Wrapper.xpr
+# Log file: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/vivado.log
+# Journal file: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.gen/sources_1', nor could it be found using path 'C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper/with-Wrapper.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  7 15:12:27 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.runs/synth_1/runme.log
+[Thu Dec  7 15:12:27 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Dec  7 15:15:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Emily Shao/Desktop/pacman-fpga/with-Wrapper/with-Wrapper.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 15:16:23 2023...

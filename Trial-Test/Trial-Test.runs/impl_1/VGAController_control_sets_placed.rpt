@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Dec  5 13:13:55 2023
+| Date         : Thu Dec  7 16:23:12 2023
 | Host         : Emily-2021LY running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file VGAController_control_sets_placed.rpt
 | Design       : VGAController
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              49 |           22 |
+| No           | No                    | No                     |              49 |           21 |
 | No           | No                    | Yes                    |              10 |            5 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |              19 |            7 |
-| Yes          | No                    | Yes                    |              10 |            4 |
+| Yes          | No                    | Yes                    |              10 |            5 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -75,10 +75,10 @@ Table of Contents
 +----------------+-------------------------+------------------+------------------+----------------+--------------+
 |  Display/CLK   |                         |                  |                1 |              1 |         1.00 |
 |  Display/CLK   | pacman_y[8]_i_1_n_0     |                  |                3 |              9 |         3.00 |
-|  Display/CLK   | pacman_x[9]_i_1_n_0     |                  |                4 |             10 |         2.50 |
 |  clk25         |                         | Display/reset0   |                5 |             10 |         2.00 |
-|  clk25         | Display/vPos[9]_i_1_n_0 | Display/reset0   |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG |                         |                  |               21 |             48 |         2.29 |
+|  clk25         | Display/vPos[9]_i_1_n_0 | Display/reset0   |                5 |             10 |         2.00 |
+|  Display/CLK   | pacman_x[9]_i_1_n_0     |                  |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG |                         |                  |               20 |             48 |         2.40 |
 +----------------+-------------------------+------------------+------------------+----------------+--------------+
 
 

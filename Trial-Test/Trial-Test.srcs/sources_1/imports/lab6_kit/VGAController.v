@@ -202,7 +202,7 @@ module VGAController(
 		.dataOut(pacmanColorData));				       	// Color at current pixel
 // ------------------------------------------------------------------------------------------------------------	
 	
-	wire onCoin = (y>10 && y<470) && (x>10 && x<630) && (y<170 || y>250) && (x<250 || x>400) && ((y%28 == 27) || (y%28 == 0) || (y%28 == 1)) && ((x%50 == 24)||(x%50 == 25)||(x%50 == 26));
+	wire onCoin = (y>10 && y<470) && (x>10 && x<620) && (((y>170 && y<300) && (x>250 && x<400))) && ((y%28 == 27) || (y%28 == 0) || (y%28 == 1)) && ((x%50 == 26)||(x%50 == 27)||(x%50 == 28));
 
 	// Assign to output color from register if active
 	reg[BITS_PER_COLOR-1:0] colorOut;
@@ -214,7 +214,7 @@ module VGAController(
 			colorOut <= pacmanColorData;
 		end
 		else if (onCoin && active) begin
-			colorOut <= 112'hff0;
+			colorOut <= 12'hff0;
 		end
 		else if (active) begin
 			colorOut <= colorData;

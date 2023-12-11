@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Dec  5 13:13:06 2023
-# Process ID: 20708
+# Start of session at: Thu Dec  7 16:22:28 2023
+# Process ID: 21968
 # Current directory: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.runs/impl_1
 # Command line: vivado.exe -log VGAController.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source VGAController.tcl -notrace
 # Log file: C:/Users/Emily Shao/Desktop/pacman-fpga/Trial-Test/Trial-Test.runs/impl_1/VGAController.vdi

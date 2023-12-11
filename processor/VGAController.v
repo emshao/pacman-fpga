@@ -20,6 +20,7 @@ module VGAController(
 
 	// Clock divider 100 MHz -> 25 MHz
 	wire clk25; // 25MHz clock
+	wire allowedBool; 	 // boolean allowed to go here or not
 
 	reg[1:0] pixCounter = 0;      // Pixel counter to divide the clock
     assign clk25 = pixCounter[1]; // Set the clock high whenever the second bit (2) is high
@@ -43,10 +44,10 @@ module VGAController(
 	reg[3:0] startGame = 1;
 	
 	always @(posedge screenEnd) begin
-		if(BTNR) begin
+		if(BTNR && allowedBool) begin
 			pacman_x <= pacman_x + 1;
 		end
-		if(BTNL) begin
+		if(BTNL && allowedBool) begin
 			pacman_x <= pacman_x - 1;
 		end
 		if(BTND) begin
@@ -163,9 +164,7 @@ module VGAController(
 		.clk(clk), 							   	   // Rising edge of the 100 MHz clk
 		.addr(winColorAddr),					       // Address from the ImageData RAM
 		.dataOut(winColorData));				       // Color at current pixel
-	
 
-	wire allowedBool; 	 // boolean allowed to go here or not
 
 	VGAROM #(		
 		.DEPTH(PIXEL_COUNT), 				     // Set RAM depth to contain every pixel
@@ -215,9 +214,9 @@ module VGAController(
 // ------------------------------------------------------------------------------------------------------------	
 	
 
-	wire onCoin = (y%16 == 0) && (x%50 == 0);
-	
+	wire onCoin = (y>10 && y<470) && (x>10 && x<630) && !((170<y && y<250) && (250<x || x<400)) && ((y%28 == 27) || (y%28 == 0) || (y%28 == 1)) && ((x%50 == 24)||(x%50 == 25)||(x%50 == 26));
 
+	
 	// Assign to output color from register if active
 	reg[BITS_PER_COLOR-1:0] colorOut;
 	always @(posedge clk) begin

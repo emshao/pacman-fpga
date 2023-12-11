@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Dec 11 01:35:22 2023
+# Process ID: 9756
+# Current directory: C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.runs/synth_1
+# Command line: vivado.exe -log Wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Wrapper.tcl
+# Log file: C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.runs/synth_1/Wrapper.vds
+# Journal file: C:/Users/Emily Shao/Desktop/pacman-fpga/testing_timing/testing_timing.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Wrapper.tcl -notrace
