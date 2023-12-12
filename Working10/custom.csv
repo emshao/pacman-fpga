@@ -1,0 +1,9 @@
+addcoin,I,01001
+beq,I,01010
+setPacX,I,01011
+setPacY,I,01100
+canNotMove,I,01101
+setGhostX,I,01110
+setGhostY,I,01111
+hasLost,I,10000
+touch,R,01110
